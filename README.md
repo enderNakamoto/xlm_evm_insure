@@ -60,21 +60,21 @@ More details here - https://github.com/enderNakamoto/xlm_evm_insure/blob/main/te
 
 Month 2–3: Oracle Infrastructure Update
 We’ll deploy an Oracle Aggregator Contract and supporting off-chain ingestion scripts using Acurast TEEs or Chainlink Functions. This will modularize and decouple flight data from core contract logic for scalability.
-More details gere - 
+More details here - https://github.com/enderNakamoto/xlm_evm_insure/blob/main/technical.md#oracle-layer-enhancements
 
 Month 4–5: Flight Delay Insurance Interface
 A dedicated UI will be developed for RLUSD-based flight insurance, including real-time flight search, policy discovery, and payout transparency. It will cater to both crypto-native and mainstream users.
 
 Month 5: Automated Market Infrastructure
-We’ll integrate frontend logic that checks whether a flight is already insured, and if not, triggers creation of a new Hedge Vault on-chain. This enables just-in-time insurance for long-tail flights.
-More details →
+We’ll integrate frontend logic that checks whether a flight is already insured, and if not, trigger creation of a new Hedge Vault on-chain. This enables just-in-time insurance for long-tail flights.
+More details - https://github.com/enderNakamoto/xlm_evm_insure/blob/main/technical.md#automated-market-creation
 
 Month 6: E2E Testing + Liquidation Bots
 Deploy to EVM testnet and simulate real user journeys—including purchasing RLUSD policies, oracle-based claim triggers, and investor withdrawal. We’ll also open source liquidation bots for executing payouts.
-More details →
+More details - https://github.com/enderNakamoto/xlm_evm_insure/blob/main/technical.md#decentralized-liquidation-bots
 
 Month 7: zkTLS Flight Ticket Verification
-Integrate zkTLS to verify that users actually have flight tickets, without revealing private data. We’ll work with airline and booking APIs (e.g., United, Alaska, Delta, Expedia) to verify eligibility securely.
+Integrate zkTLS to verify that users actually have flight tickets, without revealing private data. We will use reclaim protocol (https://reclaimprotocol.org/), vlayer(https://www.vlayer.xyz/) or comething similar.
 
 Month 8: Closed Beta Launch + Yield Study
 Launch a closed beta on the XRPL EVM Sidechain and onboard test users and RLUSD underwriters. In parallel, conduct a detailed yield analysis using live flight delay data to model capital sustainability.
@@ -85,29 +85,29 @@ Conduct third-party audits of all smart contracts and oracle integrations. Final
 
 ### Who are your target users and what is the general market opportunity?
 
-#### Target Users
+Target Users
+------------
 
-- **Travelers (starting with crypto-native flyers):** We begin with Web3-savvy travelers attending events like ETHGlobal, Devcon, and Token2049—comfortable with stablecoins and self-custody. Over time, we’ll expand to mainstream users via airline and travel platform integrations.
+- Travelers (starting with crypto-native flyers): We begin with Web3-savvy travelers attending events like ETHGlobal, Devcon, and Token2049—comfortable with stablecoins and self-custody. Over time, we’ll expand to mainstream users via airline and travel platform integrations.
 
-- **DeFi yield seekers:** Users looking for sustainable, uncorrelated RLUSD-based returns by underwriting real-world risks like flight delays—offering an alternative to lending, LPs, or trading strategies.
+- DeFi yield seekers: Users looking for sustainable, uncorrelated RLUSD-based returns by underwriting real-world risks like flight delays—offering an alternative to lending, LPs, or trading strategies.
 
-- **Builders and dev teams:** Our open-source HedgeWave Protocol enables developers to build vault-based parametric insurance products for risks like wildfire, crop failure, and weather events.
+- Builders and dev teams: Our open-source HedgeWave Protocol enables developers to build vault-based parametric insurance products for risks like wildfire, crop failure, and weather events.
 
-- **Future users across verticals:** As we expand beyond flight delay, our user base will grow to include farmers, enterprises, and public-sector agencies seeking trustless, event-based coverage.
+- Future users across verticals: As we expand beyond flight delay, our user base will grow to include farmers, enterprises, and public-sector agencies seeking automated, event-based coverage.
 
-#### Market Opportunity 
+Market Opportunity
+-------------------
 
-Parametric insurance—payouts triggered by predefined data rather than claims—has grown rapidly. The global market was valued at **$16.2 billion in 2024** and is projected to reach **$40.6 billion by 2033**, growing at a **9.9% CAGR** (according to [Global Market Insights](https://www.gminsights.com/industry-analysis/parametric-insurance-market?utm_source=chatgpt.com) and [EIN Presswire](https://www.einpresswire.com/article/779961691/parametric-insurance-market-to-hit-usd-40-bn-by-2033-north-america-35-share-holding-usd-5-5-bn-revenue?utm_source=chatgpt.com)). Growth is driven by climate volatility and enabling technologies like IoT, AI, and remote sensing.
+Parametric insurance is growing fast. The global market was valued at $16.2 billion in 2024 and is projected to reach $40.6 billion by 2033, growing at a 9.9% CAGR (according to Global Market Insights and EIN Presswire). Growth is fueled by climate volatility and enabling tech like IoT, AI, and remote sensing.
 
-**Parametric flight delay insurance** is one of the most promising use cases. These policies issue **automatic payouts** when a flight is delayed beyond a preset threshold—typically 2 to 4 hours—using real-time data. There’s **no need for claims or receipts**; compensation is triggered instantly for the inconvenience (read more [here](https://www.ledgerinsights.com/axa-blockchain-flight-delay-compensation)).
+One of the most promising applications is parametric flight delay insurance. These policies issue automatic payouts when flights are delayed beyond a preset threshold.
 
-Several players are leading this trend. **Blink Parametric** powers real-time coverage for global insurers like Manulife and Zurich (see [Blink’s ranking](https://insurtechdigital.com/top10/top-10-parametric-insurance-innovations)). **Cover Genius’s Delay Valet** enables embedded payouts like cash, credits, or vouchers for delayed flights (details [here](https://covergenius.com/delay-valet)). **Koala**, a European insurtech, offers disruption coverage across platforms like Kayak, with instant payouts and strong uptake among leisure travelers ([Koala’s growth](https://insurtechdigital.com/articles/travel-insurtech-koala-secures-funding-to-grow-in-europe)).
+Blockchain enhances this model further. Smart contracts automate payouts. DeFi-native players like Ensuro allow crypto investors to underwrite these policies and earn yield.
 
-Blockchain further enhances parametric insurance. Smart contracts automate payouts without adjusters. Oracle networks like **Chainlink** deliver verifiable flight data to smart contracts, ensuring trust and accuracy (read more [here](https://chain.link/use-cases/insurance)). DeFi-backed insurers like **Ensuro** allow crypto investors to underwrite parametric policies, earning yield while providing liquidity on-chain.
+The global travel insurance market is projected to reach $143.5 billion by 2033, growing at 20.1% CAGR. If even 10% of policies include parametric delay coverage, that’s a $3B+ opportunity—well-suited for blockchain-native products.
 
-The **travel insurance market** is projected to reach **$143.5B by 2033**, growing at **20.1% CAGR** (according to [Allied Market Research](https://www.alliedmarketresearch.com/travel-insurance-market?utm_source=chatgpt.com)). If even 10% of global policies embed parametric delay features, this could represent a **$3B+ opportunity**—making blockchain-native solutions both impactful and commercially viable.
-
-[Market Study Details](https://github.com/enderNakamoto/ripple_evm_insurance/blob/main/market.md)
+(Full market research: github.com/enderNakamoto/ripple_evm_insurance/blob/main/market.md)
 
 ### Does your project have a GitHub repository?
 Yes – https://github.com/enderNakamoto/hedgr
