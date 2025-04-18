@@ -15,7 +15,7 @@
   - [Central Risk Vault Architecture](#central-risk-vault-architecture)
   - [Oracle Layer Enhancements](#oracle-layer-enhancements)
   - [Automated Market Creation](#automated-market-creation)
-  - [🤖 Decentralized Liquidation Bots](#-decentralized-liquidation-bots)
+  - [Decentralized Liquidation Bots](#-decentralized-liquidation-bots)
 
 
 
@@ -148,7 +148,7 @@ To evolve the architecture into a scalable, production-grade protocol, we are no
 
 Let’s explore each of these in detail.
 
-### 🏛️ Central Risk Vault Architecture
+### Central Risk Vault Architecture
 To address capital fragmentation and enable more scalable insurance logic, we are transitioning to a **Central Risk Vault Architecture**. Unlike the original 1:1 market structure—where each market required its own pair of Hedge and Risk Vaults—this upgraded design introduces a single, unified **Risk Vault** that services multiple Hedge Vaults.
 
 ![alt text](images/central_hedge.png)
@@ -178,7 +178,7 @@ By decoupling data ingestion from insurance contract logic, we create a reusable
 
 This design supports broader scalability, simplifies deployment of new markets, and sets the stage for supporting other data types beyond flight delays.
 
-### ⚙️ Automated Market Creation
+### Automated Market Creation
 
 To enable scalable, on-demand insurance markets, we’re introducing **automated market creation**. When a user initiates coverage for a specific flight, the protocol first checks if that flight is already tracked by the **Flight Data Aggregator**. If the data exists, the system automatically:
 
@@ -197,7 +197,7 @@ Here’s a focused rewrite of that section, specifically about **decentralized l
 
 ---
 
-### 🤖 Decentralized Liquidation Bots
+### Decentralized Liquidation Bots
 
 To enforce insurance logic on-chain, HedgeWave Protocol relies on **Liquidation Bots**—automation agents that monitor oracle data and trigger transactions when conditions are met (e.g., price drop, flight delay).
 
