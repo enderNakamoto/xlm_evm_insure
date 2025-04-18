@@ -54,13 +54,13 @@ At ETHDenver, we built a proof of concept for a decentralized hedge against Turk
 
 Over a 10-month period, we will take HedgeWave Protocol from a validated proof of concept to a fully functional, testnet-proven, closed-beta-ready product for decentralized flight delay insurance.
 
-Month 1–2: Risk Vault Architecture + Protocol Refactor
-We will implement the Central Risk Vault architecture, replacing per-market vaults with a pooled structure to improve capital efficiency and simplify investor exposure. The framework will support permissionless market creation and new insurance verticals. RLUSD will be used for both underwriting and payouts.
-More details →
+Month 1–2: Risk Vault Architecture + Protocol Refactor:
+We will implement the Central Risk Vault architecture, replacing separate risk vault per market architecture with a pooled structure to improve capital efficiency and simplify investor exposure. RLUSD will be used for both underwriting and payouts.
+More details here - https://github.com/enderNakamoto/xlm_evm_insure/blob/main/technical.md#central-risk-vault-architecture
 
 Month 2–3: Oracle Infrastructure Update
 We’ll deploy an Oracle Aggregator Contract and supporting off-chain ingestion scripts using Acurast TEEs or Chainlink Functions. This will modularize and decouple flight data from core contract logic for scalability.
-More details →
+More details gere - 
 
 Month 4–5: Flight Delay Insurance Interface
 A dedicated UI will be developed for RLUSD-based flight insurance, including real-time flight search, policy discovery, and payout transparency. It will cater to both crypto-native and mainstream users.

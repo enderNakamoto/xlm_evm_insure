@@ -159,7 +159,7 @@ To make risk exposure predictable and safe for investors, the architecture suppo
 
 This structure improves capital efficiency, simplifies the investor experience, and brings the architecture closer to traditional pooled insurance models—while maintaining the transparency and automation benefits of smart contracts.
 
-### 🛰️ Oracle Layer Enhancements
+### Oracle Layer Enhancements
 
 While our initial proof of concept focused on hedging against inflation via forex markets (TRY/USD), we’re now transitioning our first production vertical to flight delay insurance.
 
