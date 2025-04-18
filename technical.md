@@ -15,7 +15,7 @@
   - [Central Risk Vault Architecture](#central-risk-vault-architecture)
   - [Oracle Layer Enhancements](#oracle-layer-enhancements)
   - [Automated Market Creation](#automated-market-creation)
-  - [Decentralized Liquidation Bots](#-decentralized-liquidation-bots)
+  - [Decentralized Liquidation Bots](#decentralized-liquidation-bots)
 
 
 
